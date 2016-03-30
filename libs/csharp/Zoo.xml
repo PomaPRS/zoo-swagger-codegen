@@ -1,0 +1,619 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zoo</name>
+    </assembly>
+    <members>
+        <member name="T:Zoo.Api.IAnimalsApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:Zoo.Api.IAnimalsApi.GetFavoriteAnimal(System.String)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Zoo.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="animalType"></param>
+            <returns>Animal</returns>
+        </member>
+        <member name="M:Zoo.Api.IAnimalsApi.GetFavoriteAnimalWithHttpInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Zoo.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="animalType"></param>
+            <returns>ApiResponse of Animal</returns>
+        </member>
+        <member name="M:Zoo.Api.IAnimalsApi.GetFavoriteAnimalAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Zoo.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="animalType"></param>
+            <returns>Task of Animal</returns>
+        </member>
+        <member name="M:Zoo.Api.IAnimalsApi.GetFavoriteAnimalAsyncWithHttpInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <remarks>
+            
+            </remarks>
+            <exception cref="T:Zoo.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="animalType"></param>
+            <returns>Task of ApiResponse (Animal)</returns>
+        </member>
+        <member name="T:Zoo.Api.AnimalsApi">
+            <summary>
+            Represents a collection of functions to interact with the API endpoints
+            </summary>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Api.AnimalsApi"/> class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.#ctor(Zoo.Client.Configuration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Api.AnimalsApi"/> class
+            using Configuration object
+            </summary>
+            <param name="configuration">An instance of Configuration</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.GetBasePath">
+            <summary>
+            Gets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.SetBasePath(System.String)">
+            <summary>
+            Sets the base path of the API client.
+            </summary>
+            <value>The base path</value>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.DefaultHeader">
+            <summary>
+            Gets the default header.
+            </summary>
+            <returns>Dictionary of HTTP header</returns>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.AddDefaultHeader(System.String,System.String)">
+            <summary>
+            Add default header.
+            </summary>
+            <param name="key">Header field name.</param>
+            <param name="value">Header field value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.GetFavoriteAnimal(System.String)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Zoo.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="animalType"></param> 
+            <returns>Animal</returns>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.GetFavoriteAnimalWithHttpInfo(System.String)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Zoo.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="animalType"></param> 
+            <returns>ApiResponse of Animal</returns>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.GetFavoriteAnimalAsync(System.String)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Zoo.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="animalType"></param>
+            <returns>Task of Animal</returns>
+        </member>
+        <member name="M:Zoo.Api.AnimalsApi.GetFavoriteAnimalAsyncWithHttpInfo(System.String)">
+            <summary>
+             
+            </summary>
+            <exception cref="T:Zoo.Client.ApiException">Thrown when fails to make API call</exception>
+            <param name="animalType"></param>
+            <returns>Task of ApiResponse (Animal)</returns>
+        </member>
+        <member name="P:Zoo.Api.AnimalsApi.Configuration">
+            <summary>
+            Gets or sets the configuration object
+            </summary>
+            <value>An instance of the Configuration</value>
+        </member>
+        <member name="T:Zoo.Client.ApiClient">
+            <summary>
+            API client is mainly responible for making the HTTP call to the API backend.
+            </summary>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Client.ApiClient"/> class
+            with default configuration and base path (http://localhost:5272/).
+            </summary>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.#ctor(Zoo.Client.Configuration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Client.ApiClient"/> class
+            with default base path (http://localhost:5272/).
+            </summary>
+            <param name="config">An instance of Configuration.</param>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Client.ApiClient"/> class
+            with default configuration.
+            </summary>
+            <param name="basePath">The base path.</param>
+        </member>
+        <member name="F:Zoo.Client.ApiClient.Default">
+            <summary>
+            Gets or sets the default API client for making HTTP calls.
+            </summary>
+            <value>The default API client.</value>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.CallApi(System.String,RestSharp.Method,System.Collections.Generic.Dictionary{System.String,System.String},System.Object,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,RestSharp.FileParameter},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Makes the HTTP request (Sync).
+            </summary>
+            <param name="path">URL path.</param>
+            <param name="method">HTTP method.</param>
+            <param name="queryParams">Query parameters.</param>
+            <param name="postBody">HTTP body (POST request).</param>
+            <param name="headerParams">Header parameters.</param>
+            <param name="formParams">Form parameters.</param>
+            <param name="fileParams">File parameters.</param>
+            <param name="pathParams">Path parameters.</param>
+            <param name="contentType">Content Type of the request</param>
+            <returns>Object</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.CallApiAsync(System.String,RestSharp.Method,System.Collections.Generic.Dictionary{System.String,System.String},System.Object,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,RestSharp.FileParameter},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Makes the asynchronous HTTP request.
+            </summary>
+            <param name="path">URL path.</param>
+            <param name="method">HTTP method.</param>
+            <param name="queryParams">Query parameters.</param>
+            <param name="postBody">HTTP body (POST request).</param>
+            <param name="headerParams">Header parameters.</param>
+            <param name="formParams">Form parameters.</param>
+            <param name="fileParams">File parameters.</param>
+            <param name="pathParams">Path parameters.</param>
+            <param name="contentType">Content type.</param>
+            <returns>The Task instance.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.EscapeString(System.String)">
+            <summary>
+            Escape string (url-encoded).
+            </summary>
+            <param name="str">String to be escaped.</param>
+            <returns>Escaped string.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.ParameterToFile(System.String,System.IO.Stream)">
+            <summary>
+            Create FileParameter based on Stream.
+            </summary>
+            <param name="name">Parameter name.</param>
+            <param name="stream">Input stream.</param>
+            <returns>FileParameter.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.ParameterToString(System.Object)">
+            <summary>
+            If parameter is DateTime, output in a formatted string (default ISO 8601), customizable with Configuration.DateTime.
+            If parameter is a list, join the list with ",".
+            Otherwise just return the string.
+            </summary>
+            <param name="obj">The parameter (header, path, query, form).</param>
+            <returns>Formatted string.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.Deserialize(RestSharp.IRestResponse,System.Type)">
+            <summary>
+            Deserialize the JSON string into a proper object.
+            </summary>
+            <param name="response">The HTTP response.</param>
+            <param name="type">Object type.</param>
+            <returns>Object representation of the JSON string.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.Serialize(System.Object)">
+            <summary>
+            Serialize an input (model) into JSON string
+            </summary>
+            <param name="obj">Object.</param>
+            <returns>JSON string.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.SelectHeaderContentType(System.String[])">
+            <summary>
+            Select the Content-Type header's value from the given content-type array:
+            if JSON exists in the given array, use it;
+            otherwise use the first one defined in 'consumes'
+            </summary>
+            <param name="contentTypes">The Content-Type array to select from.</param>
+            <returns>The Content-Type header to use.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.SelectHeaderAccept(System.String[])">
+            <summary>
+            Select the Accept header's value from the given accepts array:
+            if JSON exists in the given array, use it;
+            otherwise use all of them (joining into a string)
+            </summary>
+            <param name="accepts">The accepts array to select from.</param>
+            <returns>The Accept header to use.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.Base64Encode(System.String)">
+            <summary>
+            Encode string in base64 format.
+            </summary>
+            <param name="text">String to be encoded.</param>
+            <returns>Encoded string.</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.ConvertType(System.Object,System.Type)">
+            <summary>
+            Dynamically cast the object into target type.
+            Ref: http://stackoverflow.com/questions/4925718/c-dynamic-runtime-cast
+            </summary>
+            <param name="source">Object to be casted</param>
+            <param name="dest">Target type</param>
+            <returns>Casted object</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.ReadAsBytes(System.IO.Stream)">
+            <summary>
+            Convert stream to byte array
+            Credit/Ref: http://stackoverflow.com/a/221941/677735
+            </summary>
+            <param name="input">Input stream to be converted</param>
+            <returns>Byte array</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.UrlEncode(System.String)">
+            <summary>
+            URL encode a string
+            Credit/Ref: https://github.com/restsharp/RestSharp/blob/master/RestSharp/Extensions/StringExtensions.cs#L50
+            </summary>
+            <param name="input">String to be URL encoded</param>
+            <returns>Byte array</returns>
+        </member>
+        <member name="M:Zoo.Client.ApiClient.SanitizeFilename(System.String)">
+            <summary>
+            Sanitize filename by removing the path
+            </summary>
+            <param name="filename">Filename</param>
+            <returns>Filename</returns>
+        </member>
+        <member name="P:Zoo.Client.ApiClient.Configuration">
+            <summary>
+            Gets or sets the Configuration.
+            </summary>
+            <value>An instance of the Configuration.</value>
+        </member>
+        <member name="P:Zoo.Client.ApiClient.RestClient">
+            <summary>
+            Gets or sets the RestClient.
+            </summary>
+            <value>An instance of the RestClient</value>
+        </member>
+        <member name="T:Zoo.Client.ApiException">
+            <summary>
+            API Exception
+            </summary>
+        </member>
+        <member name="M:Zoo.Client.ApiException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Client.ApiException"/> class.
+            </summary>
+        </member>
+        <member name="M:Zoo.Client.ApiException.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Client.ApiException"/> class.
+            </summary>
+            <param name="errorCode">HTTP status code.</param>
+            <param name="message">Error message.</param>
+        </member>
+        <member name="M:Zoo.Client.ApiException.#ctor(System.Int32,System.String,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Client.ApiException"/> class.
+            </summary>
+            <param name="errorCode">HTTP status code.</param>
+            <param name="message">Error message.</param>
+            <param name="errorContent">Error content.</param>
+        </member>
+        <member name="P:Zoo.Client.ApiException.ErrorCode">
+            <summary>
+            Gets or sets the error code (HTTP status code)
+            </summary>
+            <value>The error code (HTTP status code).</value>
+        </member>
+        <member name="P:Zoo.Client.ApiException.ErrorContent">
+            <summary>
+            Gets or sets the error content (body json object)
+            </summary>
+            <value>The error content (Http response body).</value>
+        </member>
+        <member name="T:Zoo.Client.ApiResponse`1">
+            <summary>
+            API Response
+            </summary>
+        </member>
+        <member name="M:Zoo.Client.ApiResponse`1.#ctor(System.Int32,System.Collections.Generic.IDictionary{System.String,System.String},`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Client.ApiResponse`1"/> class.
+            </summary>
+            <param name="statusCode">HTTP status code.</param>
+            <param name="headers">HTTP headers.</param>
+            <param name="data">Data (parsed HTTP body)</param>
+        </member>
+        <member name="P:Zoo.Client.ApiResponse`1.StatusCode">
+            <summary>
+            Gets or sets the status code (HTTP status code)
+            </summary>
+            <value>The status code.</value>
+        </member>
+        <member name="P:Zoo.Client.ApiResponse`1.Headers">
+            <summary>
+            Gets or sets the HTTP headers
+            </summary>
+            <value>HTTP headers</value>
+        </member>
+        <member name="P:Zoo.Client.ApiResponse`1.Data">
+            <summary>
+            Gets or sets the data (parsed HTTP body)
+            </summary>
+            <value>The data.</value>
+        </member>
+        <member name="T:Zoo.Client.Configuration">
+            <summary>
+            Represents a set of configuration settings
+            </summary>
+        </member>
+        <member name="F:Zoo.Client.Configuration.Version">
+            <summary>
+            Version of the package.
+            </summary>
+            <value>Version of the package.</value>
+        </member>
+        <member name="M:Zoo.Client.Configuration.#ctor(Zoo.Client.ApiClient,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the Configuration class with different settings
+            </summary>
+            <param name="apiClient">Api client</param>
+            <param name="defaultHeader">Dictionary of default HTTP header</param>
+            <param name="username">Username</param>
+            <param name="password">Password</param>
+            <param name="accessToken">accessToken</param>
+            <param name="apiKey">Dictionary of API key</param>
+            <param name="apiKeyPrefix">Dictionary of API key prefix</param>
+            <param name="tempFolderPath">Temp folder path</param>
+            <param name="dateTimeFormat">DateTime format string</param>
+            <param name="timeout">HTTP connection timeout (in milliseconds)</param>
+        </member>
+        <member name="M:Zoo.Client.Configuration.#ctor(Zoo.Client.ApiClient)">
+            <summary>
+            Initializes a new instance of the Configuration class.
+            </summary>
+            <param name="apiClient">Api client.</param>
+        </member>
+        <member name="F:Zoo.Client.Configuration.Default">
+            <summary>
+            Gets or sets the default Configuration.
+            </summary>
+            <value>Configuration.</value>
+        </member>
+        <member name="F:Zoo.Client.Configuration.ApiClient">
+            <summary>
+            Gets or sets the default API client for making HTTP calls.
+            </summary>
+            <value>The API client.</value>
+        </member>
+        <member name="M:Zoo.Client.Configuration.setApiClientUsingDefault(Zoo.Client.ApiClient)">
+            <summary>
+            Set the ApiClient using Default or ApiClient instance.
+            </summary>
+            <param name="apiClient">An instance of ApiClient.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zoo.Client.Configuration.AddDefaultHeader(System.String,System.String)">
+            <summary>
+            Add default header.
+            </summary>
+            <param name="key">Header field name.</param>
+            <param name="value">Header field value.</param>
+            <returns></returns>
+        </member>
+        <member name="F:Zoo.Client.Configuration.ApiKey">
+            <summary>
+            Gets or sets the API key based on the authentication name.
+            </summary>
+            <value>The API key.</value>
+        </member>
+        <member name="F:Zoo.Client.Configuration.ApiKeyPrefix">
+            <summary>
+            Gets or sets the prefix (e.g. Token) of the API key based on the authentication name.
+            </summary>
+            <value>The prefix of the API key.</value>
+        </member>
+        <member name="M:Zoo.Client.Configuration.GetApiKeyWithPrefix(System.String)">
+            <summary>
+            Get the API key with prefix.
+            </summary>
+            <param name="apiKeyIdentifier">API key identifier (authentication scheme).</param>
+            <returns>API key with prefix.</returns>
+        </member>
+        <member name="M:Zoo.Client.Configuration.ToDebugReport">
+            <summary>
+            Returns a string with essential information for debugging.
+            </summary>
+        </member>
+        <member name="P:Zoo.Client.Configuration.Timeout">
+            <summary>
+            Gets or sets the HTTP timeout (milliseconds) of ApiClient. Default to 100000 milliseconds.
+            </summary>
+            <value>Timeout.</value>
+        </member>
+        <member name="P:Zoo.Client.Configuration.DefaultHeader">
+            <summary>
+            Gets or sets the default header.
+            </summary>
+        </member>
+        <member name="P:Zoo.Client.Configuration.Username">
+            <summary>
+            Gets or sets the username (HTTP basic authentication).
+            </summary>
+            <value>The username.</value>
+        </member>
+        <member name="P:Zoo.Client.Configuration.Password">
+            <summary>
+            Gets or sets the password (HTTP basic authentication).
+            </summary>
+            <value>The password.</value>
+        </member>
+        <member name="P:Zoo.Client.Configuration.AccessToken">
+            <summary>
+            Gets or sets the access token for OAuth2 authentication.
+            </summary>
+            <value>The access token.</value>
+        </member>
+        <member name="P:Zoo.Client.Configuration.TempFolderPath">
+            <summary>
+            Gets or sets the temporary folder path to store the files downloaded from the server.
+            </summary>
+            <value>Folder path.</value>
+        </member>
+        <member name="P:Zoo.Client.Configuration.DateTimeFormat">
+            <summary>
+            Gets or sets the the date time format used when serializing in the ApiClient
+            By default, it's set to ISO 8601 - "o", for others see:
+            https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx
+            and https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx
+            No validation is done to ensure that the string you're providing is valid
+            </summary>
+            <value>The DateTimeFormat string</value>
+        </member>
+        <member name="T:Zoo.Model.Animal">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Zoo.Model.Animal.#ctor(System.String,System.String,Zoo.Model.Appearance)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Model.Animal"/>class.
+            </summary>
+            <param name="Name">Name.</param>
+            <param name="Type">Type.</param>
+            <param name="Appearance">Appearance.</param>
+        </member>
+        <member name="M:Zoo.Model.Animal.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Zoo.Model.Animal.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Zoo.Model.Animal.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Zoo.Model.Animal.Equals(Zoo.Model.Animal)">
+            <summary>
+            Returns true if Animal instances are equal
+            </summary>
+            <param name="other">Instance of Animal to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Zoo.Model.Animal.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="P:Zoo.Model.Animal.Name">
+            <summary>
+            Gets or Sets Name
+            </summary>
+        </member>
+        <member name="P:Zoo.Model.Animal.Type">
+            <summary>
+            Gets or Sets Type
+            </summary>
+        </member>
+        <member name="P:Zoo.Model.Animal.Appearance">
+            <summary>
+            Gets or Sets Appearance
+            </summary>
+        </member>
+        <member name="T:Zoo.Model.Appearance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Zoo.Model.Appearance.#ctor(System.Nullable{System.Double},System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Zoo.Model.Appearance"/>class.
+            </summary>
+            <param name="HeightMeters">HeightMeters.</param>
+            <param name="Color">Color.</param>
+        </member>
+        <member name="M:Zoo.Model.Appearance.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Zoo.Model.Appearance.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Zoo.Model.Appearance.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Zoo.Model.Appearance.Equals(Zoo.Model.Appearance)">
+            <summary>
+            Returns true if Appearance instances are equal
+            </summary>
+            <param name="other">Instance of Appearance to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Zoo.Model.Appearance.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="P:Zoo.Model.Appearance.HeightMeters">
+            <summary>
+            Gets or Sets HeightMeters
+            </summary>
+        </member>
+        <member name="P:Zoo.Model.Appearance.Color">
+            <summary>
+            Gets or Sets Color
+            </summary>
+        </member>
+    </members>
+</doc>
